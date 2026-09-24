@@ -4,6 +4,6 @@ import com.example.lolchamps.feature.champions.domain.repository.ChampionReposit
 
 class GetChampionListUseCase(
      private val championRepository: ChampionRepository
- ){
-     suspend operator fun invoke()=championRepository.getChampionList()
+ ) {
+     suspend operator fun invoke() = championRepository.getChampions()
  }
